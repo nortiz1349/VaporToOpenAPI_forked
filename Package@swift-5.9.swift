@@ -16,14 +16,14 @@ let package = Package(
 	],
 	dependencies: [
 		.package(url: "https://github.com/vapor/vapor.git", from: "4.0.0"),
-		.package(url: "https://github.com/dankinsoid/SwiftOpenAPI.git", from: "2.24.0"),
+		.package(url: "https://github.com/nortiz1349/SwiftOpenAPI_forked.git", from: "2.24.1"),
 	],
 	targets: [
 		.target(
 			name: "VaporToOpenAPI",
 			dependencies: [
 				.product(name: "Vapor", package: "vapor"),
-				.product(name: "SwiftOpenAPI", package: "SwiftOpenAPI"),
+                .product(name: "SwiftOpenAPI", package: "SwiftOpenAPI_forked"),
 			]
 		),
 		.testTarget(
